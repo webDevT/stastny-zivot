@@ -1,0 +1,428 @@
+@import "vars"
+@import "fonts"
+
+//start global style
+body 
+    font-family: "Nunito Sans", serif
+h1
+    font-family: "PP Hatton"
+.container 
+    margin-left: auto 
+    margin-right: auto 
+    width: 1300px 
+    max-width: 90vw
+    padding-left: 0 
+    padding-right: 0
+//end global style
+
+//start header style 
+.header 
+    padding-top: 70px 
+    padding-bottom: 70px
+    position: relative
+    .container 
+        display: flex 
+        align-items: center
+.menu 
+    width: 100% 
+    display: flex 
+    justify-content: space-between
+    ul 
+        padding: 0 
+        margin: 0 
+        list-style: none
+        display: flex
+        align-items: center
+        li 
+            margin-right: 80px
+        li:last-child
+            margin-right: 0
+        a 
+            text-decoration: none
+            color: #000
+            font-size: 16px
+.logo 
+    position: absolute 
+    top: 50% 
+    left: 50% 
+    transform: translateX(-50%) translateY(-50%)
+    img 
+        width: 160px
+.menu-btn
+    display: none
+//end header style 
+
+//start main screen style 
+.main-screen__img 
+    width: 100%
+.main-screen__content 
+    position: relative
+.main-screen__content-wrapper
+    position: absolute
+    top: 68px
+    left: 0 
+    width: 100% 
+    height: 100% 
+    z-index: 999
+.signature__img
+    margin-left: auto 
+    margin-right: 0
+    display: block
+    margin-top: -120px
+.main-screen__btn
+    display: flex 
+    justify-content: center 
+    align-items: center
+    margin-left: auto 
+    margin-right: auto
+    margin-top: 65px
+    color: #fff 
+    font-size: 18px 
+    border: 2px solid #fff 
+    border-radius: 40px
+    width: 180px
+    height: 40px
+    text-decoration: none
+.main-screen__btn:hover 
+    color: #fff
+.main-screen__title
+    text-transform: uppercase
+    margin-top: 230px
+    text-align: center
+    font-size: 75px
+    font-family: $hatton
+    margin-left: -150px 
+//end main screen style 
+
+//start item section 
+.item 
+    text-align: center
+.item__icon
+    width: 90px 
+    height: 90px
+    border-radius: 50% 
+    display: flex 
+    justify-content: center 
+    align-items: center 
+    background: $gold
+    margin-left: auto 
+    margin-right: auto
+    img 
+        max-width: 50% 
+        max-height: 50%
+.items-section
+    padding-top: 160px 
+    padding-bottom: 200px
+.item__title
+    margin-top: 20px
+    font-family: $hatton 
+    font-size: 22px
+    margin-left: auto 
+    margin-right: auto 
+    max-width: 100%
+//end item section
+
+//start program section 
+.program-section
+    background: #F1F0F4
+    background-image: url('../img/bg.svg')
+    background-repeat: no-repeat 
+    background-position: top 100px right
+    background-size: 330px
+.program-section__content
+    padding-top: 100px
+.program-row
+    display: flex 
+    align-items: center
+    justify-content: center
+    transform: translateY(-50%)
+    .row 
+        display: flex 
+        align-items: center
+
+    img 
+        height: 90px
+        margin-left: 20px 
+        margin-right: 20px
+.program-button
+    height: 111px
+    background: $blue 
+    color: #fff
+    width: 424px 
+    max-width: 100%
+    border-radius: 100px
+    display: flex
+    justify-content: center 
+    align-items: center 
+    font-size: 24px 
+    text-transform: uppercase
+    font-weight: 600
+.h2 
+    font-size: 55px 
+    font-family: $hatton
+    text-transform: uppercase
+    text-align: center
+    line-height: 1.4
+.h2-xs
+    font-size: 42px
+.sub-title
+    color: $gold
+    font-family: $hatton
+    font-size: 30px
+    text-align: center   
+.program-content-row
+    margin-top: 0
+.program__photo
+    max-width: 100%
+    position: relative 
+    top: 133px
+.program-item__icon
+    min-width: 45px
+    margin-right: 37px
+.program-list
+    padding-left: 40px
+.program-item
+    margin-bottom: 40px
+    display: flex 
+    align-items: flex-start
+.program-list
+    margin-top: 150px  
+.program-item__text
+    font-size: 24px
+    font-family: $hatton
+.heart-img
+    position: absolute 
+    bottom: -28vw
+    left: -1vw
+    width: 50vw
+.program-section
+    position: relative
+.program__photo-wrapper
+    position: relative
+//end program section 
+
+//start text section
+.section 
+    padding-top: 80px 
+    padding-bottom: 80px
+.text-section
+    padding-top: 370px
+    text-align: center
+.p 
+    font-size: 24px
+.text-section
+    p 
+        width: 930px 
+        max-width: 100% 
+        margin-left: auto 
+        margin-right: auto
+        margin-top: 30px
+.cta__content
+    width: 100%
+    padding-top: 156px
+    background: url('../img/bg.png')
+    background-size: 104%
+    border-radius: 30px
+    background-position: center
+    padding-left: 30px 
+    padding-right: 30px
+    color: #fff
+    text-align: center
+    p
+        width: 930px 
+        max-width: 100% 
+        margin-left: auto 
+        margin-right: auto
+        padding-bottom: 80px
+.cta__header-row
+    display: flex
+    justify-content: center
+.cta-img
+    width: 200px 
+    margin-left: 30px 
+    margin-right: 30px
+.cta-button
+    background: $gold 
+    color: #fff
+    width: 874px
+    max-width: 100%
+    display: flex 
+    justify-content: center 
+    align-items: center
+    margin-left: auto 
+    margin-right: auto
+    height: 86px
+    font-size: 22px 
+    text-transform: uppercase
+    border-radius: 100px
+    transform: translateY(50%)
+//end text section
+
+.col-section
+    padding-top: 160px
+.col-item
+    text-align: center
+    margin-top: 100px
+    p 
+        width: 430px 
+        max-width: 100%
+        margin-left: auto 
+        margin-right: auto
+        margin-top: 24px
+.col-item__num
+    width: 75px 
+    height: 75px 
+    border-radius: 50%
+    background: $gold
+    color: #fff 
+    display: flex 
+    justify-content: center 
+    align-items: center
+    font-style: italic
+    font-size: 40px
+    margin-left: auto 
+    margin-right: auto
+    margin-bottom: 22px
+.h3 
+    font-size: 30px 
+    font-family: $hatton
+    color: $gold 
+.text-img
+    width: 300px 
+    max-width: 100%
+.text-section--2
+    padding-top: 160px
+.grey-section
+    .program-row 
+        transform: translateY(50%)
+    .text-img
+        display: block 
+        margin-left: auto 
+        margin-right: auto
+        margin-bottom: 60px
+.p-text
+    width: 930px 
+    max-width: 100% 
+    margin-left: auto 
+    margin-right: auto
+    text-align: center
+.about-img
+   width: 100%
+.about-wrapper__content 
+    position: absolute 
+    top: 0 
+    left: 0 
+    width: 100% 
+    height: 100%
+    display: flex 
+    flex-direction: column
+    align-items: flex-end
+    .program-list
+        width: 50%
+        color: $gold
+        padding-top: 130px
+    .program-item__text 
+        font-size: 26px
+.about-wrapper
+    position: relative
+.img-name
+    width: 500px 
+    max-width: 100%
+.p-padding
+    padding-top: 100px
+    padding-bottom: 100px
+.button-wrapper
+    display: flex 
+    justify-content: center 
+    align-items: center 
+    padding-top: 100px
+    padding-bottom: 60px
+.form-section
+    background: url('../img/form-bg.png')
+    background-size: cover 
+    background-position: center
+    padding-bottom: 300px
+    .program-button
+        background: $gold
+.form-text 
+    width: 500px 
+    max-width: 90% 
+    margin-left: auto 
+    margin-right: auto
+    display: block
+    margin-bottom: 60px
+.input 
+    display: block 
+    background: #fff 
+    border-radius: 50px
+    width: 100% 
+    margin-bottom: 20px
+    height: 65px
+    border: none
+    padding-left: 35px 
+    padding-right: 35px
+textarea 
+    display: block 
+    background: #fff 
+    border-radius: 20px
+    width: 100% 
+    margin-bottom: 20px
+    height: 222px
+    border: none
+    padding-left: 35px 
+    padding-right: 35px
+    padding-top: 20px 
+    padding-bottom: 20px
+.form 
+    width: 550px 
+    max-width: 100%
+    margin-left: auto 
+    margin-right: auto
+    margin-top: 60px
+.checkbox-row
+    display: flex
+    align-items: flex-start
+    a 
+        color: $gold
+        text-decoration: none
+    input 
+        margin-top: 2px
+        width: 20px 
+        height: 20px 
+        margin-right: 20px
+.footer .container 
+    background: $blue
+    border-top-left-radius: 30px
+    border-top-right-radius: 30px
+    padding-top: 110px
+    padding-bottom: 70px
+    color: $gold
+    padding-left: 30px 
+    padding-right: 30px
+    text-align: center
+.footer 
+    margin-top: -227px
+    p 
+        margin-bottom: 0
+.footer-buttons
+    display: flex 
+    justify-content: center 
+    margin-bottom: 85px 
+    a 
+        display: flex 
+        justify-content: center 
+        align-items: center 
+        border: 2px solid $gold 
+        color: $gold 
+        width: 200px 
+        height: 50px 
+        text-decoration: none 
+        border-radius: 50px 
+        margin: 0 20px
+        font-family: $hatton
+.menu 
+    z-index: 999
+@import "media"
+
+
+
