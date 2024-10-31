@@ -46,6 +46,7 @@ h1
     top: 50% 
     left: 50% 
     transform: translateX(-50%) translateY(-50%)
+    display: block
     img 
         width: 160px
 .menu-btn
@@ -422,6 +423,229 @@ textarea
         font-family: $hatton
 .menu 
     z-index: 999
+.s-text
+    font-family: "Dancing Script", cursive
+    color: #E3D3CF
+    font-size: 72px
+
+//start blog page style 
+.blog-main-screen
+    text-align: center 
+    padding-top: 200px
+    padding-bottom: 200px
+    background: url('../img/blog-bg.png')
+    background-size: cover
+    background-position: center
+    position: relative
+    .container 
+        position: relative
+        z-index: 11
+    .h1 
+        font-size: 68px
+        font-weight: 700
+.blog-main-screen:before 
+    content: ''
+    width: 100% 
+    height: 100% 
+    position: absolute 
+    top: 0 
+    left: 0
+    width: 100% 
+    height: 100% 
+    background: rgba(#EDD4CD, 0.4)
+    z-index: 9
+.blog-content
+    padding-top: 85px 
+    padding-bottom: 85px
+.blog__item-img-wrapper
+    width: 100% 
+    height: 320px
+    overflow: hidden
+    border-radius: 15px
+    box-shadow: 0 4px 4px 0 rgba(#000, .25)
+    position: relative
+    img 
+        width: 100% 
+        height: 100% 
+        object-fit: cover 
+        object-position: center
+.blog__item-img-wrapper:after
+    content: ''
+    position: absolute 
+    top: 0 
+    left: 0
+    width: 100% 
+    height: 100%
+    background: rgba(#EDD4CD, 0.4)
+    z-index: 9
+.blog__item-header
+    display: flex 
+    justify-content: space-between 
+    align-items: center
+.blog__item-header
+    padding-top: 25px 
+    padding-bottom: 25px
+.blog__item-left,
+.blog__item-right
+    display: flex 
+    align-items: center
+.blog__item-header-title
+    font-size: 14px
+    padding-right: 5px
+.blog__item-date,
+.blog__item-author
+    font-size: 18px 
+    font-family: $secondary-font
+.blog__item-title
+    font-family: $hatton  
+    color:  $gold
+    font-size: 28px
+.blog-content
+    .container
+        width: 1120px
+        max-width: 90vw
+.blog__item-text
+    font-size: 22px
+.blog__item
+    color: #000 
+    text-decoration: none
+    display: block
+    transition: all 0.4s
+.blog__item-img
+    transition: all 0.4s
+.blog__item:hover
+    color: rgba(#000, 0.8)
+    text-decoration: none
+
+    .blog__item-img
+        transform: scale(1.1)
+
+.view-more-btn:hover 
+    opacity: 0.8
+    //transform: scale(1.02)
+.view-more-btn
+    font-size: 22px 
+    font-weight: 500
+    text-decoration: underline
+    color: $gold
+.blog-content
+    .col-lg-6
+        margin-bottom: 65px
+//end blog page style
+
+//start page pagination style 
+.page-pagination
+    display: flex 
+    justify-content: center 
+    align-items: center
+.prev-page,
+.next-page
+    width: 60px 
+    height: 60px 
+    background: $gold 
+    border-radius: 50%
+    display: flex 
+    justify-content: center 
+    align-items: center
+.page-pagination__link
+    padding: 10px
+    margin: 0 8px
+    text-decoration: none
+    color: #000
+    transition: all 0.3s
+.page-pagination__link:hover
+    color: #000
+.page-pagination
+    font-size: 22px
+.page-pagination__link.active 
+    color: $gold 
+    font-weight: 700
+.prev-page:hover,
+.next-page:hover
+    opacity: 0.9
+//end page pagination style 
+
+//start article style
+.article 
+    .container
+        width: 1120px
+        max-width: 90vw
+.article-cover__wrapper
+    width: 100%
+    height: 312px
+    position: relative
+    border-radius: 15px
+    display: block 
+    margin-top: 15px 
+    margin-bottom: 15px
+    display: block
+    overflow: hidden
+    img 
+        width: 100%
+        height: 100%
+        object-fit: cover
+        object-position: center
+.article-cover__wrapper:after
+    content: ''
+    position: absolute
+    top: 0 
+    left: 0 
+    width: 100% 
+    height: 100%
+    background: rgba(#EDD4CD, 0.4)
+    z-index: 9
+    display: block
+.article__header
+    padding-top: 15px 
+    padding-bottom: 15px
+    .blog__item-header-title
+        font-size: 18px
+    .blog__item-date,
+    .blog__item-author
+        font-size: 24px
+.article-title
+    color: $gold
+    font-family: $hatton
+    font-size: 60px
+    line-height: 1.2
+    margin-top: 15px 
+    margin-bottom: 20px
+.article-text
+    font-size: 22px
+.article-footer
+    display: flex 
+    justify-content: space-between 
+    align-items: center
+    padding-top: 60px 
+    padding-bottom: 100px
+.prev-article,
+.next-article
+    background: $gold
+    font-size: 22px 
+    color: #fff
+    padding: 15px 20px
+    cursor: pointer
+    border-radius: 50px
+    display: flex 
+    align-items: center
+    justify-content: center
+    width: 235px
+    transition: all 0.4s
+    img 
+        display: block 
+.prev-article
+    img 
+        margin-right: 15px
+.next-article
+    img 
+        margin-left: 15px
+.prev-article:hover,
+.next-article:hover 
+    opacity: 0.9
+
+//end article style
+
+
 @import "media"
 
 
